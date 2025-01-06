@@ -1,0 +1,5 @@
+<menu>
+    <Services>
+        <Zeek VisibleName="Zeek" cssClass="fa fa-low-vision fa-fw" url="/ui/zeek"/>
+    </Services>
+</menu>

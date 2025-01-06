@@ -1,0 +1,4 @@
+node.cfg:/usr/local/etc/node.cfg
+networks.cfg:/usr/local/etc/networks.cfg
+zeekctl.cfg:/usr/local/etc/zeekctl.cfg
+rc.d:/etc/rc.conf.d/zeek

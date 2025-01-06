@@ -1,0 +1,9 @@
+<acl>
+    <page-user-helloworld>
+        <name>Zeek</name>
+        <patterns>
+            <pattern>ui/zeek/*</pattern>
+            <pattern>api/zeek/*</pattern>
+        </patterns>
+    </page-user-helloworld>
+</acl>

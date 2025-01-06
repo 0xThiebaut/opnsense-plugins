@@ -1,0 +1,32 @@
+<form>
+    <field>
+        <id>zeek.general.enabled</id>
+        <label>Enabled</label>
+        <type>checkbox</type>
+        <help>Enable the Zeek network security monitor.</help>
+    </field>
+    <field>
+        <id>zeek.general.interfaces</id>
+        <label>Network Interfaces</label>
+        <type>select_multiple</type>
+        <help>
+            Select the interfaces to read from.
+        </help>
+        <hint>All (recommended)</hint>
+    </field>
+    <field>
+        <id>zeek.general.no_checksum</id>
+        <label>Ignore Checksum</label>
+        <type>checkbox</type>
+        <help>
+            Normally, Zeek's event engine will discard packets which don't have valid checksums.
+            This can be a problem if one wants to analyze locally generated/captured traffic on a
+            system that offloads checksumming to the network adapter. In that case, all
+            transmitted/captured packets will have bad checksums because they haven't yet been
+            calculated by the NIC, thus such packets will not undergo analysis defined in Zeek policy
+            scripts as they normally would. Bad checksums in traces may also be a result of some
+            packet alteration tools.
+        </help>
+        <advanced>true</advanced>
+    </field>
+</form>
